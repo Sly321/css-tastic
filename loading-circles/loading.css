@@ -28,11 +28,11 @@
 }
 
 .inner-6 {
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
     top: 49px;
     left: 49px;
-    border: 3px solid;
+    border: 2px solid;
 
     -webkit-animation-duration: 0.8s;
     animation-duration: 0.8s;
@@ -76,6 +76,16 @@
 }
 
 .inner-2 {
+    -webkit-animation-name: reverse-rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: reverse-rotate;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name: reverse-rotate !important;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
     width: 50px;
     height: 50px;
     top: 31px;
@@ -100,6 +110,16 @@
 }
 
 .middle-2 {
+    -webkit-animation-name: reverse-rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: reverse-rotate;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name: reverse-rotate !important;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
     width: 74px;
     height: 74px;
     top: 20px;
@@ -136,6 +156,15 @@
 }
 
 .outer {
+    -webkit-animation-name: reverse-rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: reverse-rotate;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name: reverse-rotate !important;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
     width: 94px;
     height: 94px;
     top: 8px;
@@ -162,4 +191,19 @@
 @keyframes rotate {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes reverse-rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-360deg);}
+}
+
+@-moz-keyframes reverse-rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(-360deg);}
+}
+
+@keyframes reverse-rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
 }
